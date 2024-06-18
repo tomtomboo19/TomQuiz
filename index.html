@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tom's Quiz</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="difficulty-selection">
+            <select id="difficulty-select">
+                <option value="all">全ての難易度</option>
+                <option value="easy">簡単</option>
+                <option value="medium">普通</option>
+                <option value="hard">難しい</option>
+            </select>
+            <button id="start-quiz">クイズを開始</button>
+        </div>
+
+        <main class="quiz">
+          <div class="inner-block">
+  
+            <div class="quiz-content">
+  
+              <div class="finish">
+                <div class="score-wrap">
+                  <span class="score">0</span>
+                  <span class="ja">点</span>
+                  <span class="full">／100点</span>
+                </div>
+                <a href="./" class="goback-button">最初からやり直す</a>
+              </div>
+  
+              <div class="quiz-question-number"></div>
+              <h2 class="quiz-question"></h2>
+  
+              <ul class="quiz-answer">
+                <li>
+                <label class="quiz-button button01">
+                  <input name="radio" type="radio" value="">
+                  <span class="quiz-text01"></span>
+                </label>
+                </li>
+                <li>
+                  <label class="quiz-button button02">
+                    <input name="radio" type="radio" value="">
+                    <span class="quiz-text02"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="quiz-button button03">
+                    <input name="radio" type="radio" value="">
+                    <span class="quiz-text03"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="quiz-button button04">
+                    <input name="radio" type="radio" value="">
+                    <span class="quiz-text04"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+  
+        </main>
+  
+      </div><!-- /wrapper -->
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+</html>
